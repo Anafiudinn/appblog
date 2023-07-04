@@ -15,8 +15,8 @@
     
 
     
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
     <!-- Favicons -->
 <link rel="apple-touch-icon" href="/docs/5.3/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
@@ -160,82 +160,27 @@
 
     
 <main class="form-signin w-100 m-auto">
-  <form method="post" action="{{site_url('login')}}">
+  <form method="post" action="{{ site_url('login') }}">
 
     <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
-   
+
     @if($login_salah != '')
     <div class="alert alert-danger" role="alert">
-    {{ $login_salah }}
+       {{ $login_salah }}
     </div>
     @endif
 
     <div class="form-floating">
-      <input type="text" class="form-control" id="floatingInput" name="username" placeholder="">
+      <input type="text" class="form-control" id="floatingInput" name = "username" placeholder="">
       <label for="floatingInput">Username</label>
     </div>
     <div class="form-floating">
-      <input type="password" class="form-control" id="floatingPassword" name="password" placeholder="">
+      <input type="password" class="form-control" id="floatingPassword" name = "password" placeholder="Password">
       <label for="floatingPassword">Password</label>
     </div>
     <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
     <p class="mt-5 mb-3 text-body-secondary">&copy; 2017–2023</p>
-    <div class="c08a801d2 c08c4c081">
-    <div class="c08a801d2 c08c4c081">
-              <span>Or</span>
-            </div>
-          
-        
-          
-            <div class="c62a5a90d cdb4a3042">
-              
-                <form method="post" data-provider="windowslive" class="c1777cefd c747d4fcb c27016a88" data-form-secondary="true">
-                  <input type="hidden" name="state" value="hKFo2SBtZkRhZGZoa1UyWHJYbjF6dTVsLUJCZ0JTZFVOYkdLcaFur3VuaXZlcnNhbC1sb2dpbqN0aWTZIHpEM05XeU1PUFVQcmRHNGk0WU1jbjhkR0hHLUhKSVdIo2NpZNkgVGRKSWNiZTE2V29USHROOTVueXl3aDVFNHlPbzZJdEc" />
-                
-                  <input type="hidden" name="connection" value="windowslive" />
-                
-                  <button type="submit" class="cafd9c4d2 c2a2db47f cbf77cad4" data-provider="windowslive" data-action-button-secondary="true">
-                    
-                      <span class="ccce01549 c8379859c" data-provider="windowslive"></span>
-                    
-                  
-                    <span class="c0bac7b25">Continue with Microsoft Account</span>
-                  </button>
-                </form>
-              
-                <form method="post" data-provider="google" class="c1777cefd c747d4fcb c29eb3112" data-form-secondary="true">
-                  <input type="hidden" name="state" value="hKFo2SBtZkRhZGZoa1UyWHJYbjF6dTVsLUJCZ0JTZFVOYkdLcaFur3VuaXZlcnNhbC1sb2dpbqN0aWTZIHpEM05XeU1PUFVQcmRHNGk0WU1jbjhkR0hHLUhKSVdIo2NpZNkgVGRKSWNiZTE2V29USHROOTVueXl3aDVFNHlPbzZJdEc" />
-                
-                  <input type="hidden" name="connection" value="google-oauth2" />
-                
-                  <button type="submit" class="cafd9c4d2 c2a2db47f c1df4626c" data-provider="google" data-action-button-secondary="true">
-                    
-                      <span class="ccce01549 c8379859c" data-provider="google"></span>
-                    
-                  
-                    <span class="c0bac7b25">Continue with Google</span>
-                  </button>
-                </form>
-              
-                <form method="post" data-provider="apple" class="c1777cefd c747d4fcb c7b6f1641" data-form-secondary="true">
-                  <input type="hidden" name="state" value="hKFo2SBtZkRhZGZoa1UyWHJYbjF6dTVsLUJCZ0JTZFVOYkdLcaFur3VuaXZlcnNhbC1sb2dpbqN0aWTZIHpEM05XeU1PUFVQcmRHNGk0WU1jbjhkR0hHLUhKSVdIo2NpZNkgVGRKSWNiZTE2V29USHROOTVueXl3aDVFNHlPbzZJdEc" />
-                
-                  <input type="hidden" name="connection" value="apple" />
-                
-                  <button type="submit" class="cafd9c4d2 c2a2db47f c331dc82a" data-provider="apple" data-action-button-secondary="true">
-                    
-                      <span class="ccce01549 c8379859c" data-provider="apple"></span>
-                    
-                  
-                    <span class="c0bac7b25">Continue with Apple</span>
-                  </button>
-                </form>
-              
-            </div>
-          
-        </div>
-      </div>
-    </div>
+  </form>
 </main>
 
 
